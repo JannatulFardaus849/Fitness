@@ -1,0 +1,396 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Great+Vibes&display=swap');
+
+  .inter-font{
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-weight:;
+    font-style: normal;
+  }
+   
+ 
+ body{
+    max-width: 1440px;
+    color: var(--text-title);
+    background-color: rgb(5, 5, 5);
+} 
+.body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+:root{
+    --red-color: #E6533C;
+    --text-title: #FFFFFF;
+    --p-description: rgba(255, 255, 255, 0.50);
+    --big-btn-bg: rgba(255, 255, 255, 0.212);
+    --medium-font: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --font-black: 900;
+}
+
+/* -----------------this is header section  --------------------*/
+.header-title{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.25rem;
+    color: var(--red-color);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*.nav-link{
+    display: flex;
+}
+.nav-link>li{
+    list-style: none;
+    margin-left: 47px;
+}
+.nav-items{
+    text-decoration: none;
+     color: var(--text-title); 
+}
+  .nav-link:hover{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--red-color);
+} 
+    
+nav> ul{
+    display: flex;
+}
+.nav-items{
+    margin-right: 30px;
+    list-style: none;
+    
+    
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fffefe; 
+}
+*/
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* nav ul li a.active,
+nav ul li a:hover {
+    color: #ff5733;
+} */
+
+/* ----------------------this is banner section ----------------------------*/
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: -100px;
+}
+
+.banner-content{
+    margin-top: -100px;
+    max-width: 599px;
+    height: 440px;
+}
+
+.banner-title{
+    font-weight: var(--font-black);
+    font-size: 4.87rem;
+    line-height: 90px;
+}
+@font-face {
+    font-family: 'Miama Regular';
+    src: url(miama/Miama.otf) format('opentype'); /* Ensure the path is correct */
+    /* font-weight: var(--font-black); */
+    /* font-style: italic; */
+    font-size: 7.87rem;
+}
+
+#Miama{
+    font-family: 'Great Vibes', cursive;
+    font-size: 6.87rem;
+    font-weight:100; 
+           
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--p-description);
+}
+.join-btn{
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: var(--semi-bold);
+    font-size: 1.12rem;
+    color: var(--text-title);
+    background-color:var(--red-color);
+    border: none;
+    margin-top: 20px;
+}
+.download-btn{
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: var(--semi-bold);
+    font-size: 1.12rem;
+    color: var(--text-title);
+    background-color: black;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+.tutorial-btn{
+    position: relative;
+    top: 485px;
+    left: -100px;
+    border-radius: 12px;
+    background-color: var(--big-btn-bg);
+    color: var(--p-description);
+    text-align: left;
+    padding: 10px 50px;
+   
+}
+.tutorial-btn span{
+    display: block;
+    font-weight: var(--font-black);
+    font-size: 1.5rem;
+    color: var(--text-title);
+}
+#btn-circle{
+    position: absolute;
+    left: 5px;
+    top: 25px;
+    height: 36px;
+    width: 36px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    margin-right: -8px;
+}
+.title-btn{
+    position: relative;
+    top: 250px;
+    left: 30px;
+    
+    border-radius: 12px;
+    background-color: var(--big-btn-bg);
+    color: var(--p-description);
+    text-align: left;
+    padding: 0px 25px;   
+}
+#rate{
+    display: block;
+    font-weight: var(--font-black);
+    font-size: 2.5rem;
+    color: var(--text-title);
+}
+
+.image-container{
+  margin-right: 50px;
+}
+
+ /* ----------------------main section start ----------------------*/
+
+ /* --------------------this is habit section ----------------*/
+
+
+ .habit{
+    /* max-width: 1044px;
+    margin: 0 auto; */
+    padding: 50px 20px;
+    
+ }
+.habit-content{
+    text-align: center;
+    max-width:671px;
+    margin: 0 auto;
+
+}
+ .habit-image{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+ }
+ .card{
+    max-width: 231px;
+    text-align: center;
+    margin-top: 50px;
+ }
+ .card>img{
+    border-radius: 50%;
+    
+ }
+.card>h4{
+    font-weight: var(--semi-bold);
+    font-size: 1.125rem;
+    text-align: center;
+}
+.card>p{
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--p-description);
+}
+
+/* -------------------title and description css start ----------------*/
+.title{
+    margin: 0;
+    padding: 0;
+    font-weight: var(--font-black);
+    font-size: 3rem;
+    line-height: 60px; 
+    margin-bottom: 20px;
+}
+.discription{
+    max-width:600px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--p-description); 
+    line-height: 25px; 
+    
+}
+
+/* --------------------Run section css start -----------------------*/
+
+.run{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff11;
+    border-radius: 18px;
+    padding: 50px;
+}
+
+.run-content{
+    max-width: 420px;
+    /* margin: 80px; */
+}
+.run-image{
+    max-width: 366px;
+    width: 50%;
+}
+.run-img{
+    max-width: 100%;
+    border-radius:18px;
+    
+}
+
+/* -----------------exercises section start ---------------------*/
+
+
+.exercises{
+    max-width: 1060px;
+    margin: 100px auto;
+}
+.left{
+    margin-left: 0px;
+}
+.exercise-images{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+} 
+.img-1{
+    background-image: url('images/exercise1.jpg');
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+}
+.img-2{
+    background-image: url('images/exercise2.png');
+    background-size: cover;
+    width: 520px;
+}
+.img-3{
+    background-image: url('images/exercise3.png');
+    background-size: cover;
+    width: 290px
+    
+}
+.img-4{
+    background-image: url('images/exercise4.png');
+    background-size: cover;
+    width: 425px;
+}
+.img-5{
+    background-image: url('images/exercise5.jpg');
+    background-size: cover;
+    width: 288px;
+}
+.img-6{
+    background-image: url('images/exercise6.jpg');
+    background-size: cover;
+    width: 347px;
+    height: 200px;
+}
+
+.overcolor-1{
+    background: rgba(0, 255, 0, 0.4);
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    opacity: 0.6;
+}
+.overcolor-2{
+    background: rgba(252, 2, 2, 0.4);
+    position: absolute;
+    width: 520px;
+    height: 200px;
+    opacity: 0.6;
+}
+.overcolor-3{
+    background: rgba(83, 83, 83, 0.445);
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    opacity: 0.6;
+}
+.overcolor-4{
+    background: rgba(30, 30, 30, 0.6);
+    position: absolute;
+    width: 425px;
+    height: 200px;
+    opacity: 0.6;
+}
+.overcolor-5{
+    background: rgba(0, 255, 0, 0.4);
+    position: absolute;
+    width: 288px;
+    height: 200px;
+    opacity: 0.6;
+}
+.overcolor-6{
+    background: rgba(0, 0, 255, 0.4);
+    position: absolute;
+    width: 347px;
+    height: 200px;
+    opacity: 0.6;
+}
+
+.exercise-images p{
+    position: absolute;
+    margin: 10px auto;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    z-index: 0;
+}
+.over:hover{
+    opacity: 0.8;
+}
