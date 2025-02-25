@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    .box {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-    }
-    .box1 {
-      background-color: red;
-      top: 20px;
-      left: 20px;
-      z-index: 2;
-    }
-    .box2 {
-      background-color: blue;
-      top: 40px;
-      left: 40px;
-      z-index: 1;
-    }
-    .box3 {
-      background-color: green;
-      top: 60px;
-      left: 60px;
-      z-index: 3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers Grid</title>
+    <style>
+        body {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+        }
+        .card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 327px;
+            height: 272px;
+            display: block;
+            filter: brightness(0.7);
+        }
+        .card .info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .card .info h3 {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .card .info p {
+            margin: 0;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-  <div class="box box1"></div>
-  <div class="box box2"></div>
-  <div class="box box3"></div>
+    <div class="container">
+        <div class="card">
+            <img src="images/trainer1.png" alt="Jerome Bell">
+            <div class="info">
+                <h3>Jerome Bell</h3>
+                <p>Trainer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/trainer2.png" alt="Cameron Williamson">
+            <div class="info">
+                <h3>Cameron Williamson</h3>
+                <p>Trainer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/trainer3.png" alt="Darrell Steward">
+            <div class="info">
+                <h3>Darrell Steward</h3>
+                <p>Trainer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/trainer4.png" alt="Dianne Russell">
+            <div class="info">
+                <h3>Dianne Russell</h3>
+                <p>Trainer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/trainer5.png" alt="Cody Fisher">
+            <div class="info">
+                <h3>Cody Fisher</h3>
+                <p>Trainer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/trainer6.png" alt="Theresa Webb">
+            <div class="info">
+                <h3>Theresa Webb</h3>
+                <p>Trainer</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -87,10 +87,7 @@ nav ul li a {
     transition: 0.3s;
 }
 
-/* nav ul li a.active,
-nav ul li a:hover {
-    color: #ff5733;
-} */
+
 
 /* ----------------------this is banner section ----------------------------*/
 .banner{
@@ -114,8 +111,6 @@ nav ul li a:hover {
 @font-face {
     font-family: 'Miama Regular';
     src: url(miama/Miama.otf) format('opentype'); /* Ensure the path is correct */
-    /* font-weight: var(--font-black); */
-    /* font-style: italic; */
     font-size: 7.87rem;
 }
 
@@ -130,6 +125,8 @@ nav ul li a:hover {
     font-size: 1rem;
     color: var(--p-description);
 }
+
+/*================= banner botton css start ==========================*/
 .join-btn{
     padding: 16px 40px;
     border-radius: 50px;
@@ -339,7 +336,7 @@ nav ul li a:hover {
     width: 347px;
     height: 200px;
 }
-
+/*------------------ exercise-images bacground color or hover -------------------*/
 .overcolor-1{
     background: rgba(0, 255, 0, 0.4);
     position: absolute;
@@ -393,4 +390,182 @@ nav ul li a:hover {
 }
 .over:hover{
     opacity: 0.8;
+}
+
+/* --------------------BMI Calculator css start  -----------------------*/
+.BMI{
+    text-align: left;
+    padding: 50px;
+}
+.BMI > h2{
+   margin-left: 250px;
+}
+.BMI-calculator{
+    background-color: #ffffff11;
+    padding: 30px;
+}
+
+/* ----------------table css start ------------------- */
+
+.content{
+    max-width: 1060px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+}
+table{
+  border-collapse: collapse;  
+}
+th{
+    text-align: left;
+    border: 1px solid rgba(165, 164, 164, 0.438);
+    padding: 10px;
+    font-weight: var(--medium-font);
+    font-size: 1rem;
+    color: var(--text-title);
+}
+td{
+    text-align: left;
+    border: 1px solid rgba(165, 164, 164, 0.438);
+    padding: 10px;
+    color: var(--p-description);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+/* -------------------form css start -----------------------*/
+
+.form{
+    margin-top: 20px;
+    
+}
+
+.cm{
+    grid-area: cm;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #b9b9b931;
+    border: 0;
+}
+.kg{
+    grid-area: kg;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #b9b9b931;
+    border: 0;
+}
+.age{
+    grid-area: age;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #b9b9b931;
+    border: 0;
+}
+.dropdown{
+    grid-area: dropdown;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #b9b9b931;
+    border: 0;
+    color: var(--p-description);
+}
+.activity{
+    grid-area: activity;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #b9b9b931;
+    border: 0;
+    color: var(--p-description);
+}
+.option{
+    color: var(--p-description);
+    background-color: #080808c9;
+}
+.form{
+    display: grid;
+    grid-template-areas: 
+    "cm kg"
+    "age dropdown"
+    "activity activity";
+    gap: 10px;
+    
+}
+
+/* ---------------------team section css start  ----------------------------*/
+.team{
+    max-width: 1060px;
+    margin: 100px auto;
+}
+.team-content{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #ffffff11;
+    padding:  20px;
+    border-radius: 18px;
+    justify-content: center;
+}
+.card-img{
+    position: relative;
+}
+.card-img img {
+    width: 327px;
+    height: 272px;
+    border-radius: 18px;
+}
+.card-img .info{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+}
+.card-img .info h4{
+    margin: 0;
+}
+
+/* ------------------footer section css start -----------------------*/
+.sidebar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content{
+    max-width: 400px;
+}
+.footer-title{
+    font-weight: var(--bold);
+    font-size: 4.37rem;
+    font-style: italic;
+    color: var(--red-color);
+    margin: 0;
+}
+.sid{
+    margin-left:35px ;
+}
+aside ul{
+    list-style: none;
+    color: var(--p-description);
+    font-size: 1.2rem;
+    margin-left: 0;
+    line-height: 40px;
+   
+}
+
+.footer{
+    max-width: 1060px;
+    margin: 40px auto;
+    text-align: center;
+    color: var(--p-description);
+    font-size: 1.1rem;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: #cccccc3b;
+    margin: 30px auto;
 }
