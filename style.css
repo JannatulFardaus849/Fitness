@@ -10,15 +10,18 @@
    
  
  body{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     color: var(--text-title);
     background-color: rgb(5, 5, 5);
 } 
 .body{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
-
+header{
+    max-width: 1060px;
+    margin: 0 auto;
+}
 :root{
     --red-color: #E6533C;
     --text-title: #FFFFFF;
@@ -31,6 +34,7 @@
 }
 
 /* -----------------this is header section  --------------------*/
+
 .header-title{
     font-weight: 800;
     font-style: italic;
@@ -42,7 +46,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-/*.nav-link{
+.nav-link{
     display: flex;
 }
 .nav-link>li{
@@ -73,8 +77,8 @@ nav> ul{
     font-weight: 500;
     color: #fffefe; 
 }
-*/
-nav ul {
+
+/* nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -85,9 +89,7 @@ nav ul li a {
     color: white;
     font-size: 16px;
     transition: 0.3s;
-}
-
-
+} */
 
 /* ----------------------this is banner section ----------------------------*/
 .banner{
@@ -99,7 +101,7 @@ nav ul li a {
 
 .banner-content{
     margin-top: -100px;
-    max-width: 599px;
+    max-width: 520px;
     height: 440px;
 }
 
@@ -303,6 +305,11 @@ nav ul li a {
     margin-top: 30px;
     flex-wrap: wrap;
 } 
+  /* .exercise-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  } */
 .img-1{
     background-image: url('images/exercise1.jpg');
     background-size: cover;
@@ -398,7 +405,7 @@ nav ul li a {
     padding: 50px;
 }
 .BMI > h2{
-   margin-left: 250px;
+   margin-left: 315px;
 }
 .BMI-calculator{
     background-color: #ffffff11;
@@ -568,4 +575,55 @@ hr{
     height: 1px;
     background-color: #cccccc3b;
     margin: 30px auto;
+}
+
+@media screen and (max-width:576px) {
+    .boby{
+        max-width: 550px;
+        margin: 0 auto;
+    }
+   
+    .banner{
+        display: block;
+        max-width: 570px;
+        margin: 150px auto;
+        
+    }
+    .image-container{
+      text-align: center;
+       max-width: 550px;
+        margin: 0 auto;
+    }
+    .run, .content{
+        display: block;
+    }
+    .run-image{
+        width: 100%;
+        margin-top: 20px;
+    }
+     .exercise-images{
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+       /* grid-template-rows: repeat(3, 1fr); */
+       grid-template-columns: repeat(2, 1fr); 
+        object-fit: cover; 
+        gap: 0;
+    } 
+    .exercise-images img{
+       display: block;
+       width: 100%;
+    }
+    .BMI > h2{
+        margin-left: 0px;
+     }
+    .BMI-form{
+        margin-top: 50px;
+    }
+    .sidebar{
+        display: block;
+    }
+
+    .exercises{
+        display: none;
+    }
 }
